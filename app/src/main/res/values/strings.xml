@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">I Sense With My Little Lens</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">I sense with my little lens</string>
+    <string name="second_fragment_label">Find me!</string>
+
+    <!--First fragment-->
+    <string name="play">Play</string>
+    <string name="textview_i_spy_with_my_little_eye">I spy with my little eye</string>
+    <string name="textview_game_explanation">Find all items with your camera to win the game</string>
+    <string name="textview_welcome">Welcome to a new version of</string>
+    <!--Second fragment-->
+
+</resources>
