@@ -1,4 +1,4 @@
-package com.acoria.isensewithmylittlelens.constraintLayouting
+package com.acoria.isensewithmylittlelens.core.constraintLayouting
 
 import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout

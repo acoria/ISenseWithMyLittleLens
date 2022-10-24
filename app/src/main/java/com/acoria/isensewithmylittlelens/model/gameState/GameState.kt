@@ -1,8 +1,6 @@
-package com.acoria.isensewithmylittlelens.gameState
+package com.acoria.isensewithmylittlelens.model.gameState
 
-import com.acoria.isensewithmylittlelens.gameState.IGameState
-import com.acoria.isensewithmylittlelens.gameState.ItemState
-import com.acoria.isensewithmylittlelens.items.Item
+import com.acoria.isensewithmylittlelens.model.Item
 
 class GameState(items: List<Item>) : IGameState {
 

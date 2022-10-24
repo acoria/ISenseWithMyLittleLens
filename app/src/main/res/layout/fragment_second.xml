@@ -13,48 +13,7 @@
         app:layout_constraintBottom_toTopOf="@id/testview"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_weight="1">
-
-<!--        <TextView-->
-<!--            android:id="@+id/textview_1"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Fruit"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@id/textview_2"-->
-<!--            app:layout_constraintHorizontal_chainStyle="spread"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--        <ImageView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:src="@drawable/checkbox_tick"-->
-<!--            app:layout_constraintBottom_toBottomOf="@id/textview_2"-->
-<!--            app:layout_constraintEnd_toStartOf="@id/textview_2"-->
-<!--            app:layout_constraintTop_toTopOf="@id/textview_2"-->
-<!--            app:tint="?android:attr/textColor" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/textview_2"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Plant"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@id/textview_3"-->
-<!--            app:layout_constraintStart_toEndOf="@id/textview_1"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/textview_3"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Spoon"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toEndOf="@id/textview_2"-->
-<!--            app:layout_constraintTop_toTopOf="parent" />-->
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        app:layout_constraintVertical_weight="1" />
 
     <Button
         android:id="@+id/test_button"

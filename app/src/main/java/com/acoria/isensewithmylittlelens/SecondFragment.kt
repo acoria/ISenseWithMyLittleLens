@@ -6,10 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.acoria.isensewithmylittlelens.databinding.FragmentSecondBinding
-import com.acoria.isensewithmylittlelens.gameState.GameState
-import com.acoria.isensewithmylittlelens.gameState.IGameState
-import com.acoria.isensewithmylittlelens.items.Item
-import com.acoria.isensewithmylittlelens.rendering.GameStateRenderer
+import com.acoria.isensewithmylittlelens.game.Game
+import com.acoria.isensewithmylittlelens.model.gameState.GameState
+import com.acoria.isensewithmylittlelens.model.gameState.IGameState
+import com.acoria.isensewithmylittlelens.model.Item
+import com.acoria.isensewithmylittlelens.ui.rendering.GameStateRenderer
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -21,7 +22,6 @@ class SecondFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-    private lateinit var gameState: IGameState
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,27 +33,10 @@ class SecondFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        initializeGameState()
+        val game = Game(binding.constLayoutItems)
         binding.testButton.setOnClickListener {
-            gameState.itemStates.forEach { itemState -> itemState.found = true }
+            game.gameState.itemStates.forEach { itemState -> itemState.found = true }
         }
-    }
-
-    private fun initializeGameState() {
-        binding.constLayoutItems.removeAllViews()
-        gameState = GameState(
-            mutableListOf(
-                Item("Plant")
-//                Item("Spoon"),
-//                Item("Fruit"),
-//                Item("Screen"),
-//                Item("Keyboard"),
-//                Item("Mouse"),
-//                Item("Cup")
-            )
-        )
-        gameState.registerOnGameFinished { initializeGameState() }
-        GameStateRenderer(gameState, binding.constLayoutItems).render()
     }
 
     override fun onDestroyView() {

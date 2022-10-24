@@ -1,12 +1,12 @@
-package com.acoria.isensewithmylittlelens.rendering
+package com.acoria.isensewithmylittlelens.ui.rendering
 
 import android.view.View
 import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.constraintlayout.widget.ConstraintSet
-import com.acoria.isensewithmylittlelens.constraintLayouting.ConstraintApplier
-import com.acoria.isensewithmylittlelens.gameState.IItemState
-import com.acoria.isensewithmylittlelens.uiElements.GameUIElementFactory
+import com.acoria.isensewithmylittlelens.core.constraintLayouting.ConstraintApplier
+import com.acoria.isensewithmylittlelens.model.gameState.IItemState
+import com.acoria.isensewithmylittlelens.ui.uiElements.GameUIElementFactory
 
 class ItemStatesRenderer(private val parentLayout: ConstraintLayout) : IItemStatesRenderer {
 

@@ -1,12 +1,10 @@
-package com.acoria.isensewithmylittlelens.rendering
+package com.acoria.isensewithmylittlelens.ui.rendering
 
 import android.app.AlertDialog
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.acoria.isensewithmylittlelens.R
-import com.acoria.isensewithmylittlelens.constraintLayouting.ConstraintLayoutHorizontalListAligner
-import com.acoria.isensewithmylittlelens.gameState.IGameState
-import com.acoria.isensewithmylittlelens.rendering.IGameStateRenderer
-import com.acoria.isensewithmylittlelens.rendering.ItemStatesRenderer
+import com.acoria.isensewithmylittlelens.core.constraintLayouting.ConstraintLayoutHorizontalListAligner
+import com.acoria.isensewithmylittlelens.model.gameState.IGameState
 
 class GameStateRenderer(
     private val gameState: IGameState,

@@ -1,6 +1,6 @@
-package com.acoria.isensewithmylittlelens.gameState
+package com.acoria.isensewithmylittlelens.model.gameState
 
-import com.acoria.isensewithmylittlelens.items.Item
+import com.acoria.isensewithmylittlelens.model.Item
 
 class ItemState(override val item: Item) : IItemState {
 

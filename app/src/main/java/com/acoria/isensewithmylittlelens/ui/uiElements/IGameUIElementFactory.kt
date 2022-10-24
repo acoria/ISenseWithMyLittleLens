@@ -1,9 +1,9 @@
-package com.acoria.isensewithmylittlelens.uiElements
+package com.acoria.isensewithmylittlelens.ui.uiElements
 
 import android.content.Context
 import android.widget.ImageView
 import android.widget.TextView
-import com.acoria.isensewithmylittlelens.gameState.IItemState
+import com.acoria.isensewithmylittlelens.model.gameState.IItemState
 
 interface IGameUIElementFactory {
     fun createItemTextView(itemState: IItemState, context: Context): TextView

@@ -1,4 +1,4 @@
-package com.acoria.isensewithmylittlelens.uiElements
+package com.acoria.isensewithmylittlelens.ui.uiElements
 
 import android.content.Context
 import android.view.View
@@ -6,8 +6,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.acoria.isensewithmylittlelens.R
-import com.acoria.isensewithmylittlelens.gameState.IItemState
-import com.acoria.isensewithmylittlelens.uiElements.IGameUIElementFactory
+import com.acoria.isensewithmylittlelens.model.gameState.IItemState
+import com.acoria.isensewithmylittlelens.ui.uiElements.IGameUIElementFactory
 
 class GameUIElementFactory : IGameUIElementFactory {
     override fun createItemTextView(itemState: IItemState, context: Context): TextView {
